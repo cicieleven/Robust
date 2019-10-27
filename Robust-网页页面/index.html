@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>briup招聘</title>
+	<link rel="stylesheet" type="text/css" href="style/index.css">
+	<link rel="stylesheet" type="text/css" href="http://at.alicdn.com/t/font_1430427_0fafnvqvmgen.css">
+	<link href="https://cdn.bootcss.com/twitter-bootstrap/4.3.1/css/bootstrap.css" rel="stylesheet">
+<script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdn.bootcss.com/twitter-bootstrap/4.3.1/js/bootstrap.js"></script>
+<script src="js/index.js"></script>
+</head>
+
+
+<body>
+	<!-- 顶部导航 -->
+	<nav class="nav">
+	<!-- 左边城市 -->
+		<div class="nav_left">
+			<p>北京<span>[切换城市]</span></p>
+		</div>
+		<!-- 右边列表 -->
+		<div class="nav_right">
+			<div>登录/注册</div>
+			<div>
+				<div>个人中心 <i class="iconfont icon-xiala"></i></div>
+				<div>
+				<!-- 子列表 -->
+					<ul>
+						<li>我的收藏</li>
+						<li>我的求职</li>
+						<li>我的浏览</li>
+					</ul>
+				</div>
+			</div>
+			<div>
+				<div>商家中心 <i class="iconfont icon-xiala"></i></div>
+				<div>
+				<!-- 子列表 -->
+					<ul>
+						<li>我的发布</li>
+						<li>企业信息</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</nav>
+	<!-- 中间主体内容 -->
+	<div class="container">
+		<!-- 搜索部分 -->
+		<div class="header">
+			<div class="header_left">
+			<!-- logo -->
+				<img src="images/index/u135.png">
+			</div>
+			<!-- 搜索框 -->
+			<div class="header_main">
+				<div class="search">
+					<div class="search_text" style="width: 414px;height: 37px;">
+						<i class="iconfont icon-icon--" style="float: left; "></i>
+						<input type="text" style="border: none; width:385px; ">
+					</div>
+					<div>
+						<span>搜职位</span>
+					</div>
+				</div>
+				<!-- 搜索框下文字 -->
+				<div class="sr_bottom">
+					<ul>
+						<li>收银员</li>
+						<li>理货员</li>
+						<li>服务员</li>
+						<li>店员</li>
+						<li>营业员</li>
+					</ul>
+				</div>
+			</div>
+			<!-- 发布招聘 -->
+			<div class="header_right">
+				<i class="iconfont icon-info"></i>
+				<span>发布招聘</span>
+			</div>
+		</div>
+		<!-- 内容中的基本信息部分 -->
+		<div class="message">
+			<!-- 职位 -->
+			<div class="zw">
+				<div class="ms">职位:</div>
+				<div class="zw_c">
+					<ul>
+						<li><a href="">全部</a></li>
+						<li><a href="">超市/零售</a></li>
+						<li><a href="">影视/娱乐</a></li>
+						<li><a href="">教育培训</a></li>
+						<li><a href="">餐饮</a></li>
+						<li><a href="">客服</a></li>
+						<li><a href="">保险</a></li>
+						<li><a href="">销售</a></li>
+						<li><a href="">运动健身</a></li>
+						<li><a href="">仓储/物流</a></li>
+						<li><a href="">实习生</a></li>
+						<li><a href="">家政/安保</a></li>
+						<li><a href="">翻译</a></li>
+						<li><a href="">美容美发</a></li>
+					</ul>
+				</div>
+			</div>
+			<!-- 地点 -->
+			<div class="dd">
+				<div class="ms">地点:</div>
+				<div class="dd_c">
+					<ul>
+						<li><a href="">不限</a></li>
+						<li><a href="">海淀</a></li>
+						<li><a href="">朝阳东城</a></li>
+						<li><a href=""></a></li>
+						<li><a href="">西城</a></li>
+						<li><a href="">崇文</a></li>
+						<li><a href="">宣武</a></li>
+						<li><a href="">丰台</a></li>
+						<li><a href="">石景山</a></li>
+						<li><a href="">大兴</a></li>
+						<li><a href="">房山</a></li>
+					</ul>
+				</div>
+			</div>
+			<!-- 福利 -->
+			<div class="fl">
+				<div class="ms">福利:</div>
+				<div class="fl_c">
+					<ul>
+						<li><a href="">不限</a></li>
+						<li><a href="">五险一金</a></li>
+						<li><a href="">包住</a></li>
+						<li><a href="">包吃</a></li>
+						<li><a href="">周末双休</a></li>
+						<li><a href="">饭补</a></li>
+						<li><a href="">话补</a></li>
+					</ul>
+				</div>
+			</div>
+			<!-- 已选 -->
+			<div class="yx">
+				<div class="ms">已选:</div>
+				<div class="yx_c"></div>
+			</div>
+		</div>
+		<!-- 中间获取信息内容 -->
+		<div id="con_menu">
+
+		</div>
+		<!-- 分页 -->
+		<!-- 分页 -->
+		<div class="page" style="float: right;">
+			<nav aria-label="Page navigation example">
+				<ul class="pagination">
+					<li class="page-item"><a class="page-link">1</a></li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+
+	 <!-- 一键报名模态框开始 -->
+    <div class="modal fade " id="registrationModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-ml" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">选择报名方式</h5>
+                <button type="button" class="close" onclick="closeModal.call(this)">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <!-- begin -->
+                <form id="registration_form">
+    
+                    <!-- 报名 -->
+                    <div class="form-group row" id="btns">
+                        <button class="btn-primary" id="jlbm" style="font-weight: bold;margin-left: 35%;">简历报名</button>
+                        <button class="btn-primary" id="txbm" style="font-weight: bold;margin-left: 5%;">填写报名信息</button>
+                    </div>
+	                   
+		            <!-- 取消、保存按钮 -->
+		            <div class="modal-footer">
+		                <button type="button" class="btn btn-secondary" onclick="closeModal.call(this)">取消</button>
+		         	</div>
+		         </form>
+        	</div>
+        </div>
+    </div>
+    </div>
+    <!-- 一键报名模态框结束 -->
+
+    <!-- 填写报名模态框开始 -->
+    <div class="modal fade " id="txModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">选择报名方式</h5>
+                <button type="button" class="close" onclick="closeModal.call(this)">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <!-- begin -->
+                <form id="tx_form">
+                    <!-- 姓名 -->
+                    <div class="form-group row">
+                        <label class="col-2 text-center" for="input_realname">姓名:</label>
+                        <input id="input_realname" class="form-control col-5" type="text" name="realname" placeholder="请输入2-4个汉字">
+                    </div>
+                    <!-- 性别 -->
+                    <div class="form-group row">
+                        <label class="col-2 text-center" for="gender">性别:</label>
+                        <select id="gender" class="form-control col-3">
+                        	<option>男</option>
+                        	<option>女</option>
+                        </select>
+                    </div>
+                    <!-- 出生年月 -->
+                    <div class="form-group row">
+                        <label class="col-2 text-center" for="input_birth">出生月份:</label>
+                        <select id="input_birth" class="form-control col-5">
+                        	<option>1990年</option>
+                        	<option>1991年</option>
+                        	<option>1992年</option>
+                        	<option>1993年</option>
+                        	<option>1994年</option>
+                        	<option>1995年</option>
+                        	<option>1996年</option>
+                        	<option>1997年</option>
+                        	<option>1998年</option>
+                        	<option>1999年</option>
+                        	<option>2000年</option>
+                        </select>
+                    </div>
+                    <!-- 最高学历 -->
+                    <div class="form-group row">
+                        <label class="col-2 text-center" for="input_education">最高学历:</label>
+                        <select id="input_education" class="form-control col-5">
+                        	<option>小学</option>
+                        	<option>初中</option>
+                        	<option>中专</option>
+                        	<option>高中</option>
+                        	<option>大专</option>
+                        	<option>本科</option>
+                        	<option>硕士</option>
+                        	<option>博士</option>
+                        	<option>博士后</option>
+                        	<option>院士</option>
+                        </select>
+                    </div>
+                    <!-- 工作经验 -->
+                    <div class="form-group row">
+                        <label class="col-2 text-center" for="input_experience">工作经验:</label>
+                        <select id="input_experience" class="form-control col-5">
+                        	<option>无</option>
+                        	<option>1~3年</option>
+                        	<option>3~5年</option>
+                        	<option>5~10年</option>
+                        	<option>10年以上</option>
+                        </select>
+                    </div>
+                    <!-- 手机号 -->
+                    <div class="form-group row">
+                    	<label class="col-2 text-center" for="input_telephone">手机号:</label>
+                    	<input id="input_telephone" class="form-control col-3" type="text" name="telephone" placeholder="请输入手机号码">
+                    	&nbsp;&nbsp;&nbsp;
+                    	<button class="btn-warning col-2">获取验证码</button>
+                    </div>
+                   
+		            <!-- 取消、保存按钮 -->
+		            <div class="modal-footer">
+		            	<button id="btn_save" type="button" class="btn btn-primary">完成报名</button>
+		                <button type="button" class="btn btn-secondary" onclick="closeModal.call(this)">取消</button>
+		            </div>
+        		</form>
+        	</div>
+	        <div class="modal-footer" style="font-size: 12px;">
+	        	<p>注册登录即代表同意<a href="">《用户注册隐私保护服务协议》</a></p>
+	        </div>
+   		</div>
+      </div>
+    </div>
+    <!-- 填写报名模态框结束 -->
+
+	<footer class="footer"></footer>
+</body>
+</html>

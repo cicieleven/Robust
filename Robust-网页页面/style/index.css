@@ -1,0 +1,258 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	display: flex;
+	flex-direction: column;
+}
+a{
+	text-decoration: none;
+	/*font-family: "微软雅黑";*/
+	font-size: 14px;
+	color: #333;
+}
+ul li{
+	list-style: none;
+	float: left;
+}
+/*顶部导航栏*/
+.nav{
+	background-color: #fafafa;
+	height: 2.5em;
+	line-height: 2.5em;
+	border-bottom: 2px solid #ededed;
+}
+/*顶部导航栏左边城市*/
+.nav .nav_left{
+	float: left;
+	margin-left: 10%;
+}
+/*城市*/
+.nav .nav_left p{
+	color: blue;
+}
+.nav .nav_left p:hover{
+	color: red;
+	cursor: pointer;
+}
+/*切换城市*/
+.nav .nav_left span{
+	color: #999999;
+	font-weight: bold;
+	font-size: 14px;
+}
+/*顶部导航栏右边*/
+.nav .nav_right{
+	float: right;
+	margin-right: 10%;
+}
+/*导航列表*/
+.nav .nav_right>div{
+	float: left;
+	padding: 0 10px;
+	color: #999999;
+	font-size: 14px;
+
+}
+/*让子列表隐藏*/
+.nav .nav_right>div ul{
+	display: none;
+}
+.nav .nav_right>div:hover{
+	cursor: pointer;
+	display: block;
+}
+/*中间主体内容*/
+.container{
+	padding: 10px 10%;
+	flex: 1;
+}
+.container .header{
+	height: 100px;
+	border-bottom: 2px solid #ededed;
+}
+
+/*左边logo图片*/
+.container .header_left{
+	float: left;
+	margin-top: 16px;
+}
+/*中间搜索部分*/
+.container .header_main{
+	float: left;
+	margin-top: 20px;
+	margin-left: 100px;
+	width: 515px;
+}
+/*搜索框*/
+.container .search{
+	text-align: center;
+	line-height: 2em;
+}
+.container .search .search_text{
+	float: left;
+	border: 2px solid #128fed;
+	border-radius: 5px;
+	border-top-right-radius: 0;
+	border-bottom-right-radius: 0;
+	width: 410px;
+	height: 33px;
+} 
+.container .search .search_text i{
+	width: 20px;
+	height: 20px;
+	margin-left: 5px;
+}
+
+/*搜职位*/
+.container .search div:last-child{
+	width: 94px;
+	height: 37px;
+	text-align: center;
+	background-color: #128fed;
+	color: #fff;
+	margin-left: 414px;
+	border-radius: 5px;
+	border-top-left-radius: 0;
+	border-bottom-left-radius: 0;
+}
+/*收银员等*/
+.container .sr_bottom li{
+	padding: 0 5px;
+	color: #999999;
+	font-size: 12px;
+}
+/*发布招聘*/
+.container .header_right{
+	float: right;
+	margin-top: 23px;
+	border-radius: 5px;
+	line-height: 2em;
+	text-align: center;
+	width: 102px;
+	height: 32px;
+	background-color: #ff9900;
+	color: #fff;
+}
+/*基本信息部分*/
+/* .container .message>div{
+	float: left;
+} */
+.container .message ul li a{
+	line-height: 3em;
+	padding:0 20px;
+}
+.container .message::after{
+	content: "";
+	display: block;
+	clear: both;
+}
+.container .message div{
+	float: left;
+	width: 100%;
+}
+.container .message .ms{
+	float: left;
+	line-height: 3em;
+}
+/*职位*/
+.container .message .zw{
+	border-bottom: 1px solid #ededed;
+}
+.container .message .zw_c li{
+	display: inline-block;
+	text-align: center;
+}
+/*地点*/
+.container .message .dd{
+	border-bottom: 1px solid #ededed;
+}
+ .container .message .dd_c li{
+	display: inline-block;
+	text-align: center;
+}
+/*福利*/
+.container .message .fl{
+	border-bottom: 1px solid #ededed;
+}
+.container .message .fl_c li{
+	display: inline-block;
+	text-align: center;
+}
+/*已选*/
+.container .message .yx{
+	border-bottom: 2px solid #128fed;
+}
+/*底部*/
+.footer{
+	height: 100px;
+}
+
+#con_menu{
+    width: 1140px;
+    margin: 0 auto;
+}
+.m{
+    height: 131px;
+    background: #fff;
+    position: relative;
+    border-bottom: 1px solid #ccc;
+}
+.m h4{
+    position: absolute;
+    top:10px;
+    font-size: 18px;
+}
+.m .m_1{
+    color: #FF6600;
+    font-size: 16px;
+    font-weight: bold;
+    position: absolute;
+    top:45px;
+}
+.m .m_1 span{
+    font-size: 12px;
+    color: #333;
+    margin-left: 15px;
+}
+.m .w{
+    position: absolute;
+  
+    top:68px;
+}
+.m .m_2{
+    display: inline-block;
+    color: #fff;
+    padding: 2px 15px;
+    margin-right: 8px;
+    margin-top: 15px;
+    font-size: 12px;
+}
+.m .m_3{
+    width: 167px;
+    height: 36px;
+    background: #0080FF;
+    line-height: 20px;
+    text-align: center;
+    color: #fff;
+    line-height: 36px;
+    border-radius: 3px;
+    position: absolute;
+    right: 10px;
+    top:35px;
+}
+.m .m_3:hover{
+	cursor: pointer;
+}
+.c1{background: #8080C0;}
+.m_9 {position: absolute;
+    left: 400px;
+    top:35px;
+width: 250px;
+font-size: 12px;}
+.m_9 p{
+    float: left;
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
